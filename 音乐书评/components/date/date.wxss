@@ -1,0 +1,34 @@
+/* components/date/date.wxss */
+.time{
+    width: 150px;
+    display: flex;
+    font-size: 12px;
+    /* margin-left: 10px; */
+    
+}
+.num{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.no{
+    margin-top: 13px;
+}
+.bold{
+    font-size: 28px;
+    font-weight: bold;
+}
+.line{
+    width: 1px;
+    height: 30px;
+    background: #111;
+    margin: 10px;
+}
+.date{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}

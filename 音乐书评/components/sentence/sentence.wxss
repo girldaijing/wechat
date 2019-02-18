@@ -1,0 +1,21 @@
+/* components/sentence/sentence.wxss */
+.sentence{
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.back{
+    position: relative;
+}
+.typepic{
+    width: 25px;
+    height: 87px;
+    position:absolute;
+    bottom: 106px;
+    left: 20px;
+}
+.movie-words{
+    margin-top: 70px;
+}

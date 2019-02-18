@@ -1,0 +1,25 @@
+/* pages/search/search.wxss */
+
+.search{
+    margin-top:10rpx;
+    height:80rpx;
+    display: flex;
+    align-items: center;
+    background: #eee;
+    width:95%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input,icon{
+    margin-left: 20rpx;
+}
+input{
+    flex:1;
+}
+.container{
+   padding: 20rpx;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}

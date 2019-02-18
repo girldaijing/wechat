@@ -1,0 +1,21 @@
+/* components/movie/item/item.wxss */
+.item-head{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.picOne{
+width: 210rpx;
+height: 310rpx;
+
+}
+.item-bottom{
+    display: flex;
+   
+}
+.item-head>text{
+    font-size: 14px;
+}
+.item-bottom>text{
+ font-size: 20rpx;
+}

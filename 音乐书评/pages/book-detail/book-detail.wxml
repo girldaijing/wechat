@@ -1,0 +1,58 @@
+<!--pages/book-detail/book-detail.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+
+<view class="bigtitle">
+    <image src="{{detail.image}}"></image>
+    <view>{{detail.author}}</view>
+</view>
+
+<view class="evalue">短评</view>
+
+<view class="comment">
+    <block wx:for="{{comments}}" wx:key="index">
+        <v-tag content="{{item.content}}" tag-class="{{index==0?'bg':''||index==1?'bg1':''}}">
+            <text slot="after">+{{item.nums}}</text>
+        </v-tag>
+    </block>
+</view>
+
+<view class="summary">
+    <view>内容简介</view>
+    <text decode="{{true}}">{{tools.format(detail.summary)}}</text>
+</view>
+
+<view class="msg">
+    <view class="head">书本信息</view>
+    <view><text>出版社</text><text>{{detail.publisher}}</text></view>
+    <view><text>出版年</text><text>{{detail.pubdate}}</text></view>
+    <view><text>页数</text><text>{{detail.pages}}</text></view>
+    <view><text>定价</text><text>{{detail.price}}</text></view>
+    <view><text>精装</text><text>{{detail.binding}}</text></view>
+</view>
+
+<view class="bottom" wx:if="{{!isShow}}">
+      <image src="/images/jilu.png"></image>
+      <input type="text" bindtap="onClick" placeholder="留下你的短评"/>
+      <v-like isLike="{{likeStatus.like_status}}" count="{{likeStatus.fav_nums}}" bind:jump="onLike"></v-like>
+</view>
+
+<view class="com-content" wx:if="{{isShow}}">
+    <form bindsubmit="onConfirm">
+        <view class="com-head">
+            <text bindtap="onCancel">取消</text>
+            <button plain="{{true}}" formType="submit">确定</button>
+        </view>
+        <view class="comment">
+            <block wx:for="{{comments}}" wx:key="index">
+                <v-tag content="{{item.content}}" tag-class="{{index==0?'bg':''||index==1?'bg1':''}}">
+                    <text slot="after">+{{item.nums}}</text>
+                </v-tag>
+            </block>
+        </view>
+        <view class="com-int">
+            <input type="text" class="int" confirm-type="search" name="search" bindconfirm="onConfirm" placeholder="请您输入12字短评"/>
+        </view>
+    </form>
+</view>
+
+<view class="model" wx:if="{{isShow}}"></view>

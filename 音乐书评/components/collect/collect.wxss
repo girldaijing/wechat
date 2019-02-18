@@ -1,0 +1,36 @@
+/* components/collect/collect.wxss */
+.item{
+    width:330rpx;
+    height:470rpx;
+    border:1rpx solid #eee;
+    margin-bottom: 30rpx;
+}
+.header{
+    height:90rpx;
+    display: flex;
+    justify-content: space-between;
+    padding-left:20rpx;
+    padding-right: 20rpx;
+    align-items: center;
+    margin-top: 10px;
+}
+.banner{
+    height:200rpx;
+    width:100%;
+}
+.footer{
+    padding:20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100rpx;
+    font-size: 12px;
+}
+.music{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    width:210rpx;
+    height:210rpx;
+}

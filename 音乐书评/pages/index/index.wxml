@@ -1,0 +1,12 @@
+<view class="index-header">
+<v-date index="{{classic.index}}"></v-date>
+<v-like isLike="{{like_status}}" count="{{fav_nums}}" bind:jump="onLike"></v-like>
+<v-share openType="share">
+    <image slot="image" src="/images/share.png"  class="share"></image>
+</v-share>
+</view>
+<v-movie wx:if="{{classic.type==100}}" image="{{classic.image}}" content="{{classic.content}}"></v-movie>
+<v-music wx:if="{{classic.type==200}}" image="{{classic.image}}" content="{{classic.content}}" url="{{classic.url}}" title="{{classic.title}}"></v-music>
+<v-sentence wx:if="{{classic.type==300}}" image="{{classic.image}}" content="{{classic.content}}"></v-sentence>
+<v-nav title="{{classic.title}}" isLast="{{isLast}}" isFirst="{{isFirst}}"
+bind:previous="onPrev" bind:next="onNext"></v-nav>

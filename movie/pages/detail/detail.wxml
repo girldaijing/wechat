@@ -1,0 +1,40 @@
+<!--pages/detail/detail.wxml-->
+<view class="header">
+    <image class="back" src="{{banner}}" catchtap="Preview"></image>
+    <view class="words">
+    <p class="w-one">{{title}}</p>
+    <p class="w-two"><text>{{country}}</text></p>
+    <p><text class="w-three">{{like}}</text> <text class="w-four">人喜欢</text> 
+        <text class="w-three">{{comment}}</text> <text class="w-four">条评论</text></p>
+    </view>
+    <image class="small" src="{{small}}"></image>
+</view>
+
+<view class="detail">
+    <p class="de-title">{{alt_title}}</p>
+    <view class="de-summary">
+    <p class="xing"><text>评分</text><v-star stars="{{stars}}" class="star"></v-star><text>{{average}}</text></p>
+    <p><text>导演</text><text>{{director}}</text></p>
+    <p><text>影人</text><text>{{castsName}}</text></p>
+    <p><text>类型</text><text>{{genres}}</text></p>
+    </view>
+</view>
+
+<view class="introduce">
+    <p>剧情简介</p>
+    <p>{{sum}}</p>
+</view>
+
+<view class="act">
+    <p>影人</p>
+    <p>
+    <scroll-view scroll-x="true" scroll-y="" class="scroll">
+       <block wx:for="{{casts}}" wx:key="index">
+             <view>
+               <image src="{{item.avatars.small}}" class="pic"></image>
+               <text>{{item.name}}</text>
+            </view>
+       </block>
+    </scroll-view>
+   </p>
+</view>

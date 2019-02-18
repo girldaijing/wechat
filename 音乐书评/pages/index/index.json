@@ -1,0 +1,11 @@
+{
+    "usingComponents": {
+        "v-date":"/components/date/date",
+        "v-like":"/components/like/like",
+        "v-movie":"/components/movie/movie",
+        "v-music":"/components/music/music",
+        "v-sentence":"/components/sentence/sentence",
+        "v-nav":"/components/nav/nav",
+        "v-share":"/components/imagebutton/imagebutton"
+    }
+}

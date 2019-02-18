@@ -1,0 +1,12 @@
+
+<view>
+    <view class="grid-head">
+        <text>{{data.header}}</text>
+        <text catchtap="Moreclick">更多</text>
+    </view>
+    <view class="grid-bottom">
+            <block wx:for="{{data.movies}}"  wx:key="index">
+                    <v-item data="{{item}}"></v-item>
+            </block> 
+    </view>
+</view>

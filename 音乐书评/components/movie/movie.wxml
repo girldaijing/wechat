@@ -1,0 +1,6 @@
+<!--components/movie/movie.wxml-->
+<view class="movie">
+    <image src="{{image}}" class="back"></image>
+    <image src="images/movie.png" class="typepic"></image>
+    <text class="movie-words">{{content}}</text>
+</view>

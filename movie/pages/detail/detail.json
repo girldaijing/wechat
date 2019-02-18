@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "v-star":"/components/movie/star/star"
+      }
+}

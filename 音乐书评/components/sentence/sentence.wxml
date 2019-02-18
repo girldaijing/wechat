@@ -1,0 +1,6 @@
+<!--components/sentence/sentence.wxml-->
+<view class="sentence">
+    <image src="{{image}}" class="back"></image>
+    <image src="images/shiju.png" class="typepic"></image>
+    <text class="movie-words">{{content}}</text>
+</view>

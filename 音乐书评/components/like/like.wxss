@@ -1,0 +1,9 @@
+/* components/like/like.wxss */
+.like{
+    display: flex;
+
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}

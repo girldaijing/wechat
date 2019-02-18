@@ -1,0 +1,8 @@
+/* components/movie/star.wxss */
+.star{
+display: flex;
+}
+.star image{
+    width: 20rpx;
+    height: 20rpx;
+}

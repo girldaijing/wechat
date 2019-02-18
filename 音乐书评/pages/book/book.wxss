@@ -1,0 +1,32 @@
+/* pages/book/book.wxss */
+.search{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background: #fafafa;
+}
+.search>text{
+    color: #999;
+}
+.booktitle{
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+.loop{
+    margin-top: 50px;
+    padding-left: 90rpx;
+    padding-right: 90rpx;
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+}
+v-book{
+    margin-bottom: 30px;
+}

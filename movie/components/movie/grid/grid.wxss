@@ -1,0 +1,15 @@
+/* components/movie/grid/grid.wxss */
+.grid-head{
+   display: flex;
+   justify-content:space-between;
+   margin-left: 30rpx;
+   margin-right: 30rpx;
+   margin-top: 50rpx;
+   color: #405f80;
+   font-size: 12px;
+}
+.grid-bottom{
+    margin-top: 14rpx;
+    display: flex;
+    justify-content: space-around;
+}

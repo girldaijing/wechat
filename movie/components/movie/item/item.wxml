@@ -1,0 +1,11 @@
+<!--components/movie/item/item.wxml-->
+<v-item>
+    <view class="item-head">
+        <image src="{{data.image}}" catchtap="Imgclick" class="picOne" mode="aspectFit" data-id="{{data.id}}"></image>
+        <text>{{data.title}}</text>
+        <view class="item-bottom">
+            <v-star stars="{{data.stars}}"></v-star>
+            <text>{{data.average}}</text>
+        </view>
+    </view>
+</v-item>

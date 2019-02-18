@@ -1,0 +1,14 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+    <image src="/images/bg.png" ></image>
+    <v-btn wx:if="{{!authorized}}" openType="getUserInfo" bind:onGet="onGetUserInfo" class="my">
+        <image slot="image" src="/images/logo.png" class="image-btn"                         ></image>
+    </v-btn>
+    <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" class="my"></image>
+</view>
+
+<view class="likecontainer">
+    <block wx:for="{{likes}}" wx:key="index">
+        <v-item classic="{{item}}"></v-item>
+    </block>
+</view>
